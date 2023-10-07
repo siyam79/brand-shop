@@ -13,7 +13,7 @@ const Events = ({ event }) => {
     }, [])
 
     return (
-        <div className='' data-aos="flip-left">
+        <div className=''>
             <div className="card w-full h-full bg-base-400 shadow-inner  hover:shadow-xl">
                 <figure className=" px-1 py-1 ">
                     <img src={image} alt="Shoes" className="rounded-xl h-[300px] " />
@@ -24,7 +24,7 @@ const Events = ({ event }) => {
                 <div className=' flex justify-between items-center px-10 py-4'>
                     <p className=' flex items-center gap-2 font-bold text-lg '> <span className=' text-cyan-600 '><PiAppStoreLogo className='text-2xl font-bold '></PiAppStoreLogo></span> {sponcer_name}</p>
 
-                    <Link to={`/services/${id}`} className=' bg-blue-500 shadow-lg shadow-blue-500/50 py-1.5 px-4 rounded-md  text-white  font-bold '> View Details </Link>
+                    <Link to={`/events/${id}`} className=' bg-blue-500 shadow-lg shadow-blue-500/50 py-1.5 px-4 rounded-md  text-white  font-bold '> View Details </Link>
                 </div>
 
             </div>

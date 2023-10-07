@@ -7,13 +7,15 @@ import Contact from "../Components/Contact/Contact";
 import Register from "../Components/Register/Register";
 import Login from "../Components/Login/Login";
 import ErrorElement from "../Components/ErrorElement/ErrorElement";
+import ServiceDetails from "../Components/ServiceDetails/ServiceDetails";
+import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
 
 
 const MyRoute = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout></MainLayout>,
-        errorElement:<ErrorElement></ErrorElement>,
+        errorElement: <ErrorElement></ErrorElement>,
         children: [
             {
                 path: '/',
@@ -21,9 +23,15 @@ const MyRoute = createBrowserRouter([
                 loader: () => fetch('/events.json')
             },
             {
-                path: '/services/:id',
+                path: '/events/:id',
+                element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
+                loader: () => fetch('/events.json')
+
+            },
+            {
+                path: '/services',
                 element: <Services></Services>,
-            
+
             },
             {
                 path: '/about',

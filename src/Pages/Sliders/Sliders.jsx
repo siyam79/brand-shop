@@ -9,7 +9,7 @@ import Slide from './Slide'
 
 
 const Sliders = () => {
-    const slideImg = [slider1, slider2, slider3, slider4, slider5]
+    const slideImg =  [slider4, slider1, slider2, slider3,  slider5]
 
     return (
         <div>

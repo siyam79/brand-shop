@@ -29,6 +29,7 @@ const AuthProvider = ({ children }) => {
     }
 
 
+    // Profile handle 
 
     const handleUpdateProfile =( name , photo )=>{
         return updateProfile(auth.currentUser,{
