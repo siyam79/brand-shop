@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Anniversary Milestones: Celebrating Love and Togetherness",
+    "image": "https://i.ibb.co/jMBv5yJ/pexels-viresh-studio-1444442.jpg",
+    "price": 19.99,
+    "description": "Anniversaries are special milestones in a person's life or in the life of a couple, marking the passage of time and celebrating significant events or relationships. They serve as reminders of important moments and provide an opportunity to reflect on the journey that has been taken.Relationship anniversaries such as wedding anniversaries, commemorate the enduring commitment and love between couples. They are occasions to honor the years spent together, often with gifts and gestures of affection. These milestones offer a chance for couples to reaffirm their love and reminisce about cherished memories",
+    "sponcer_name": "AB Group"
+   
+  },
+  {
+    "id": 2,
+    "title": "Wedding Bliss : Celebrating Love and Uniting Hearts",
+    "image": "https://i.ibb.co/S7xbb0r/weldding.jpg",
+    "price": 29.99,
+    "description": "Weddings are joyous and significant life events that mark the union of two individuals in love. They are celebrated across cultures and traditions worldwide, each with its unique customs and rituals. At the heart of every wedding is a declaration of commitment and the promise of a shared future.",
+    "sponcer_name": "AB Group ",
+    "thumbnail_img": "https://example.com/thumb2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Engagement Extravaganza : Toasting to Love and Forever ",
+    "image": "https://i.ibb.co/BwyLJC4/Anniversaries1.jpg",
+    "price": 39.99,
+    "description": "Engagement parties are joyful celebrations held to mark the engagement of a couple who have decided to take the significant step towards marriage. These events are typically held shortly after the engagement announcement, serving as a wonderful opportunity for the couple to share their happiness with family and friends..",
+    "sponcer_name": "AB Group ",
+    "thumbnail_img": "https://example.com/thumb3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Birthday Bashes: Celebrating Life's Milestones with Joy",
+    "image": "https://i.ibb.co/y8qhy4q/Birthday-events.jpg",
+    "price": 49.99,
+    "description": "Birthday parties are delightful celebrations held annually to mark the passage of another year in a person's life. These joyous events are a universal tradition, cherished by people of all ages and cultures as they provide an opportunity to gather with loved ones and celebrate, life itsel The central focus of any birthday party is the guest of honor. Whether it's a child a teenager or an adult the individual's special day is commemorated with enthusiasm and warmth. The hallmark of  birthday party is the birthday cake, often adorned with candles representing the person's age. The tradition of making a wish and blowing out the candles is a beloved ritual",
+    "sponcer_name": "AB Group",
+    "thumbnail_img": "https://example.com/thumb4.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Retirement Celebrations: Honoring a Journey and Embracing a New Chapter",
+    "image": "https://i.ibb.co/2N6DkfN/Retirement-Parties.jpg",
+    "price": 59.99,
+    "description": "Retirement parties are festive gatherings held to honor and celebrate an individual's transition from a long and fulfilling career into the world of retirement. These events mark the end of a professional chapter and the beginning of a new, leisure-filled phase of life, making them a significant and joyous occasion.",
+    "sponcer_name": "AB Group ",
+    "thumbnail_img": "https://example.com/thumb5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Baby Shower Bliss: Celebrating the Upcoming Arrival with Love and Gifts",
+    "image": "https://i.ibb.co/bvdchR5/birthday.jpg",
+    "price": 69.99,
+    "description": "A baby shower is a heartwarming and joyous event held to celebrate the impending arrival of a new baby into a family. It's a time for expectant parents to gather with friends and loved ones, sharing their excitement and anticipation for the newest addition to their lives.",
+    "sponcer_name": "AB Group ",
+    "thumbnail_img": "https://example.com/thumb6.jpg"
+  }
+]
