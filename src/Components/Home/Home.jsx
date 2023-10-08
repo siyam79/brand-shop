@@ -11,8 +11,6 @@ const Home = () => {
     console.log(events);
 
 
-
-
     return (
         <div>
             {/* <NavBar></NavBar> */}

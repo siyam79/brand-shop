@@ -3,8 +3,8 @@ import useAuth from "../../Pages/useAuth/useAuth";
 import PropTypes from 'prop-types';
 
 
-const PrivateRoute = ({children}) => {
-    const {user ,  loading} = useAuth()
+const PrivateRoute = ({ children }) => {
+    const { user, loading } = useAuth()
 
     const location = useLocation()
     console.log(location.pathname);
@@ -18,9 +18,9 @@ const PrivateRoute = ({children}) => {
 
     if (user) {
         return children
-        
+
     }
- return <Navigate state={location.pathname} to='/login'></Navigate>
+    return <Navigate state={location.pathname} to='/login'></Navigate>
 
 
     // console.log(loading);
@@ -29,16 +29,16 @@ const PrivateRoute = ({children}) => {
     //     return <div>
     //         <h1 className="text-5xl text-center font-semibold ">Loading</h1>
     //     </div>
-        
+
     // }
-  
+
     // if (!user.email) {
     //     return <Navigate to='/login'></Navigate>
-        
+
     // }
     // return children
 
-    
+
 };
 PrivateRoute.propTypes = {
     children: PropTypes

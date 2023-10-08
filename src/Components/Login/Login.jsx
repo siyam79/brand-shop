@@ -12,8 +12,8 @@ const Login = () => {
     const navigate = useNavigate()
     const [showPassword, setShowPassWord] = useState(false)
     const { signin } = useAuth();
-    const location =useLocation();
-    console.log( 'location  login page ',location);
+    const location = useLocation();
+    console.log(location);
 
     const loginHandleSubmit = (e) => {
         e.preventDefault();
@@ -29,27 +29,32 @@ const Login = () => {
 
         signin(email, password)
             .then(res => {
+                console.log(res);
                 // toast.success('login ', res )
                 // navigate( location?.state ? location.state : '/')
                 if (res.user) {
+
                     toast.success('User logged in successfully');
-                    navigate( location?.state ? location.state : '/')
+                    setTimeout(() => {
+                        navigate(location?.state ? location.state : '/')
+                    }, 1000);
+                //    redirect('/')
                 }
 
             }).catch(error => {
-                toast.error('Cheack your Email or password' , error);
+                console.error(error);
+                toast.error('Cheack your Email or password', error);
             })
 
     }
 
-
     return (
         <>
-            <div className="hero  bg-base-200">
+            <div className="hero lg:mt-24 mt-14 bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. <br /> Quaerat fugiat ut assumenda excepturi <br /> exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <h1 className="text-5xl mt-10 font-bold">Login now!</h1>
+                        <p className="py-6"> Quaerat fugiat ut assumenda excepturi <br /> exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={loginHandleSubmit} className="card-body">
@@ -92,7 +97,19 @@ const Login = () => {
                         </form>
                     </div>
                 </div>
-                <ToastContainer></ToastContainer>
+                <ToastContainer
+                    position="top-center"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="light"
+                />
+                {/* <ToastContainer></ToastContainer> */}
             </div>
         </>
     );

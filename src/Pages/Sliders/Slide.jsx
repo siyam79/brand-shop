@@ -34,7 +34,7 @@ const Slide = ({ slideImg }) => {
     }, [selideindx])
     
     return (
-        <div id="slider" className=" w-full  flex flex-col items-center justify-center  p-8 h-screen ">
+        <div id="slider" className=" w-[95%] mx-auto lg:mt-24 mt-14 flex flex-col items-center justify-center  p-8 h-screen ">
             {
                 slideImg &&
                 <>

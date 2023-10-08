@@ -35,6 +35,8 @@ const Register = () => {
 
         createUser(email, password)
             .then(res => {
+                console.log(res);
+                toast.success('create account ')
                     handleUpdateProfile(name, img)
                         .then(() => {
                             toast.success('User created successfully', {
@@ -46,44 +48,23 @@ const Register = () => {
 
             })
             .catch(error => {
-                toast.error(error.message)
+                console.error(error);
+                toast.error('please cheack your email or password ')
             })
 
 
 
 
-
-
-
-
-
-
-
-
-        // createUser(email, password)
-        //     .then(res => {
-        //         handleUpdateProfile(name, img)
-        //             .then(() => {
-        //                 toast.success('User created successfully')
-        //                 navigate('/')
-        //             })
-
-        //     })
-        //     .catch(error => {
-        //         toast.error(error.message)
-        //     })
-
-
     }
     return (
         <>
-            <div className="">
+            <div className="lg:mt-0 mt-14 ">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-5xl font-bold ">Register now!</h1>
+                        <h1 className="text-5xl font-bold mt-10 ">Register now!</h1>
 
                     </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl ">
+                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl lg:mt-20 ">
                         <form onSubmit={handleSubmit} className="card-body">
                             <div className="form-control">
                                 <label className="label">

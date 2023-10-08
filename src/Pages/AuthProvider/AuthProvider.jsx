@@ -58,8 +58,7 @@ const AuthProvider = ({ children }) => {
         return signOut(auth);
             
     }
-
-
+    
     // using Obseverb    ata  user ke  deka suna kore  
 
     useEffect(() => {
@@ -96,6 +95,4 @@ const AuthProvider = ({ children }) => {
 AuthProvider.propTypes = {
     children: PropTypes
 }
-
-
 export default AuthProvider;

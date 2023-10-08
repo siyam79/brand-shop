@@ -16,7 +16,9 @@ const SocialLogin = () => {
 
     const handleSocialLogin = (user) => {
 
-        user().then(res => {
+        user()
+        .then(res => {
+            console.log(res);
             if(res.user){
                 toast.success('User logged in successfully', {
                     position: 'top-center'

@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 const Footer = () => {
     return (
         <div className="mt-10 rounded  ">
-            <footer className="footer py-10 px-40  bg-neutral text-neutral-content rounded-sm ">
+        
+            {/* <footer className="footer py-10 px-40  bg-neutral text-neutral-content rounded-sm ">
                 <footer className="footer w-[90%] mx-auto  ">
                 <nav>
                     <Link className="footer-title"  >Services</Link>
@@ -28,7 +29,9 @@ const Footer = () => {
                     <Link className="link link-hover">Cookie policy</Link>
                 </nav>
                 </footer>
-            </footer>
+            </footer> */}
+
+
         </div>
     );
 };
