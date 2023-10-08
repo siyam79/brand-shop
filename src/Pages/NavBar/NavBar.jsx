@@ -8,6 +8,11 @@ const NavBar = () => {
     const { logOut, user } = useAuth()
     console.log(user);
 
+
+
+
+
+
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -62,9 +67,10 @@ const NavBar = () => {
             </NavLink>
         </li>
 
-
-
-        <li className=" hover:bg-sky-700 px-3 rounded-md ">
+        
+        {
+            !user?.email ? <div className=" lg:flex  items-center justify-center gap-4  ">
+                 <li className=" hover:bg-sky-700 px-3 rounded-md ">
             <NavLink
                 to="/register"
                 className={({ isActive, isPending }) =>
@@ -74,12 +80,7 @@ const NavBar = () => {
                 Register
             </NavLink>
         </li>
-
-
-
-
-        {
-            !user?.email ? <li className="hover:bg-sky-700  px-1 rounded-md ">
+            <li className="hover:bg-sky-700  px-1 rounded-md ">
             <NavLink
                 to="/login"
                 className={({ isActive, isPending }) =>
@@ -90,13 +91,15 @@ const NavBar = () => {
             </NavLink>
 
         </li>
+            </div>
+            
             :
             
             <div className="flex justify-center items-center  gap-4 ">
                 <div>
                     <button onClick={logOut} className="">Logout</button>
                 </div>
-                <img className="w-8 rounded-full " src={user?.photoURL} alt={user.displayName} />
+                <img className="w-8 rounded-full " src={user?.photoURL} alt={user?.displayName} />
             </div>
                 
         }

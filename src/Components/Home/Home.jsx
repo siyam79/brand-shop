@@ -18,6 +18,9 @@ const Home = () => {
             {/* <NavBar></NavBar> */}
             <Banner></Banner>
             <Marquap></Marquap>
+            <div>
+                <h1 className=" text-center mt-10 font-bold text-2xl text-slate-500 hover:text-blue-600  "> Our Social Service  </h1>
+            </div>
             <div className= " w-[98%] mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-4 ">
                 {
                     events?.map(event => <Events key={event.id} event={event} ></Events>)

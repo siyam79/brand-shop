@@ -39,7 +39,7 @@ const SocialLogin = () => {
                     className="btn btn-sm "><span className=" text-xl"><FcGoogle></FcGoogle></span> Login</button>
                 <button
                     onClick={() => { handleSocialLogin(githubLogin) }}
-                    className="btn btn-sm" ><span className="text-xl "> <BsGithub></BsGithub> </span> Github</button>
+                    className="btn btn-sm " ><span className="text-xl "> <BsGithub></BsGithub> </span> Github</button>
 
             </div>
             <ToastContainer></ToastContainer>

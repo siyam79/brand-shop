@@ -29,15 +29,15 @@ const Login = () => {
 
         signin(email, password)
             .then(res => {
+                // toast.success('login ', res )
+                // navigate( location?.state ? location.state : '/')
                 if (res.user) {
-                    toast.success('User logged in successfully', {
-                        position: 'top-center'
-                    })
+                    toast.success('User logged in successfully');
                     navigate( location?.state ? location.state : '/')
                 }
 
             }).catch(error => {
-                toast.error('Currect Your Email' , error);
+                toast.error('Cheack your Email or password' , error);
             })
 
     }

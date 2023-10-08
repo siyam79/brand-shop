@@ -9,7 +9,7 @@ import { useState } from "react";
 
 const Register = () => {
     const { createUser, handleUpdateProfile } = useAuth()
-    const [showPassword , setShowPassWord] = useState(false)
+    const [showPassword, setShowPassWord] = useState(false)
 
     const navigate = useNavigate()
 
@@ -29,8 +29,7 @@ const Register = () => {
 
         if (!/(?=.*?[A-Z])(?=.*?[#?!@$%^&*-]).{6,}/.test(password)) {
             toast.error('please Your passwor capital letter special character and 6 characters ');
-           return;
-
+            return;
         }
 
 
@@ -49,6 +48,32 @@ const Register = () => {
             .catch(error => {
                 toast.error(error.message)
             })
+
+
+
+
+
+
+
+
+
+
+
+
+        // createUser(email, password)
+        //     .then(res => {
+        //         handleUpdateProfile(name, img)
+        //             .then(() => {
+        //                 toast.success('User created successfully')
+        //                 navigate('/')
+        //             })
+
+        //     })
+        //     .catch(error => {
+        //         toast.error(error.message)
+        //     })
+
+
     }
     return (
         <>
@@ -70,7 +95,7 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text font-semibold text-lg ">Your Email</span>
                                 </label>
-                                <input type="text" placeholder="Your E-mail" className="input input-bordered" name='email' required />
+                                <input type="text" placeholder="Your E-mail" required className="input input-bordered" name='email' />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -83,15 +108,15 @@ const Register = () => {
                                     <span className="label-text font-semibold text-lg">Password</span>
                                 </label>
                                 <div className=" form-control relative ">
-                                <input type= { showPassword ? "text" : "password"}
-                                 placeholder="password"
-                                  className="input input-bordered"
-                                   name='password' required />
-                                <span className="absolute left-72 top-4 " onClick={()=> setShowPassWord(!showPassword)}>
-                                    
-                                    {
-                                        showPassword? <AiFillEye></AiFillEye> :<AiFillEyeInvisible></AiFillEyeInvisible> 
-                                    } 
+                                    <input type={showPassword ? "text" : "password"}
+                                        placeholder="password"
+                                        className="input input-bordered"
+                                        name='password' required />
+                                    <span className="absolute left-72 top-4 " onClick={() => setShowPassWord(!showPassword)}>
+
+                                        {
+                                            showPassword ? <AiFillEye></AiFillEye> : <AiFillEyeInvisible></AiFillEyeInvisible>
+                                        }
                                     </span>
                                 </div>
                             </div>
@@ -99,13 +124,13 @@ const Register = () => {
                                 <button className="btn btn-neutral" type='submit'>Register</button>
                             </div>
                             <label className="label">
-                               You Have an account? <Link to="/login" className="label-text-alt link link-hover text-[18px] ">Please Login</Link>
+                                You Have an account? <Link to="/login" className="label-text-alt link link-hover text-[18px] ">Please Login</Link>
                             </label>
-                           <SocialLogin></SocialLogin>
+                            <SocialLogin></SocialLogin>
                         </form>
                     </div>
                 </div>
-               <ToastContainer></ToastContainer>
+                <ToastContainer></ToastContainer>
             </div>
         </>
     );
