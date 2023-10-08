@@ -105,7 +105,7 @@ const Register = () => {
                                 <button className="btn btn-neutral" type='submit'>Register</button>
                             </div>
                             <label className="label">
-                                You Have an account? <Link to="/login" className="label-text-alt link link-hover text-[18px] ">Please Login</Link>
+                                You Have an account? <Link to="/login" className="label-text-alt link link-hover text-[16px] text-cyan-500 font-bold  ">Please Login</Link>
                             </label>
                             <SocialLogin></SocialLogin>
                         </form>

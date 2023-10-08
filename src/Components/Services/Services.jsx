@@ -2,7 +2,7 @@
 
 const Services = () => {
     return (
-        <div>
+        <div className="min-h-screen mt-40 ">
            services
         </div>
     );

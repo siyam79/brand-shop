@@ -91,7 +91,7 @@ const Login = () => {
                                 <button type='submit' className="btn btn-neutral">Login</button>
                             </div>
                             <label className="label">
-                                New here? <Link to="/register" className="label-text-alt link link-hover text-[14px] ">Create an account</Link>
+                                New here? <Link to="/register" className="label-text-alt link link-hover text-[16px] text-cyan-600 ">Create an account</Link>
                             </label>
                             <SocialLogin></SocialLogin>
                         </form>

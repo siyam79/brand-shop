@@ -2,7 +2,7 @@
 
 const About = () => {
     return (
-        <div>
+        <div className="min-h-screen ">
             about 
         </div>
     );

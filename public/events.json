@@ -5,7 +5,7 @@
     "image": "https://i.ibb.co/jMBv5yJ/pexels-viresh-studio-1444442.jpg",
     "price": 190.99,
     "sort_description": "Join us as we celebrate a year of love, laughter, and lasting memories! It's our anniversary, and we can't wait to share this special day with friends and family. Let's toast to another year of happiness and togetherness",
-    "sponcer_name": "AB Group"
+    "details": ""
    
   },
   {
@@ -32,8 +32,9 @@
     "image": "https://i.ibb.co/y8qhy4q/Birthday-events.jpg",
     "price": 99.99,
     "sort_description": "Get ready to party as we celebrate [Name]'s big day with a Birthday Bash that promises fun, laughter, and memories that will last a lifetime! Join us for an unforgettable celebration filled with music, cake, and good company...",
-    "sponcer_name": "AB Group",
-    "thumbnail_img": "https://example.com/thumb4.jpg"
+    "details": ""
+    
+    
   },
   {
     "id": 5,

@@ -8,8 +8,8 @@ const NavBar = () => {
     const { logOut, user } = useAuth()
     console.log(user);
 
-    const [active , setActive] = useState(false)
- 
+    const [active, setActive] = useState(false)
+
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -67,44 +67,44 @@ const NavBar = () => {
 
         {
             !user?.email ? <div className=" lg:flex  items-center justify-center gap-4  ">
-                 <li className=" hover:bg-sky-700 px-3 rounded-md ">
-            <NavLink
-                to="/register"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? 'bg-sky-700  px-2  rounded-md ' : ""
-                }
-            >
-                Register
-            </NavLink>
-        </li>
-            <li className="hover:bg-sky-700  px-1 rounded-md ">
-            <NavLink
-                to="/login"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? 'bg-sky-700 px-4 py-1 rounded-md ' : ""
-                }
-            >
-                Login
-            </NavLink>
+                <li className=" hover:bg-sky-700 px-3 rounded-md ">
+                    <NavLink
+                        to="/register"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? 'bg-sky-700  px-2  rounded-md ' : ""
+                        }
+                    >
+                        Register
+                    </NavLink>
+                </li>
+                <li className="hover:bg-sky-700 lg:p-0 pt-2 px-1 rounded-md ">
+                    <NavLink
+                        to="/login"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? 'bg-sky-700 px-4 py-1 rounded-md ' : ""
+                        }
+                    >
+                        Login
+                    </NavLink>
 
-        </li>
+                </li>
             </div>
-            
-            :
-            
-            <div className="flex justify-center items-center  gap-4 relative ">
-               {
-                active && (
-                    <div className=" absolute top-8 z-50 bg-gray-700 px-10 ">
-                    <button onClick={logOut} className=" text-center px-6 ">Logout</button>
-                   <div className=" ">
-                   <h1 className=" font-medium text-center "> {user?.displayName} </h1>
-                   </div>
+
+                :
+
+                <div className="flex justify-center items-center  gap-4 relative ">
+                    {
+                        active && (
+                            <div className=" absolute top-8 z-50 lg:bg-gray-700  px-10 rounded-sm ">
+                                <button onClick={logOut} className=" text-center px-6  ">Logout</button>
+                                <div className=" ">
+                                    <h1 className=" font-medium text-center pb-4 "> {user?.displayName} </h1>
+                                </div>
+                            </div>
+                        )
+                    }
+                    <img onClick={() => setActive(!active)} className="w-8 rounded-full " src={user?.photoURL} alt={user?.displayName} />
                 </div>
-                )
-               }
-                <img onClick={()=>setActive(!active)} className="w-8 rounded-full " src={user?.photoURL} alt={user?.displayName} />
-            </div>   
         }
 
     </>
@@ -117,18 +117,37 @@ const NavBar = () => {
                     <ul className=" lg:flex lg:px-10 lg:gap-8 gap-4 mr-6 hidden font-bold text-lg ">
                         {navLinks}
                     </ul>
-                    <div className=" flex lg:hidden items-center gap-6  ">
+                    <div className=" flex  lg:hidden items-center gap-6  ">
                         <button onClick={toggleMenu}>
                             {
                                 menuOpen ? <AiOutlineClose></AiOutlineClose> : <AiOutlineMenu className=" text-xl  cursor-pointer "></AiOutlineMenu>
                             }
                         </button>
 
+
+
+                        {/* <div className="flex justify-center items-center  gap-4 relative ">
+                            {
+                                active && (
+                                    <div className="  absolute top-8 z-50 bg-gray-700 px-10 rounded-sm ">
+                                        <button onClick={logOut} className=" text-center px-6 ">Logout</button>
+                                        <div className=" ">
+                                            <h1 className=" font-medium text-center pb-2 "> {user?.displayName} </h1>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                            <img onClick={() => setActive(!active)} className="w-8 rounded-full " src={user?.photoURL} alt={user?.displayName} />
+                        </div> */}
+
                     </div>
 
                 </nav>
+
+
+
                 <div className="">
-                    <ul className={`lg:hidden gap-12 z-40 mt-10 block text-lg space-y-4 px-4 py-2  rounded-md  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#fff]  font-bold  ${menuOpen ? " fixed duration-700 bg-cyan-400  w-full  text-center pb-6 " : 'hidden'}`}>
+                    <ul className={`lg:hidden gap-12 z-40 mt-10 block text-lg space-y-4 px-4 py-2  rounded-md  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#fff]  font-bold  ${menuOpen ? " fixed duration-700 bg-cyan-400  w-full  text-center pb-14 " : 'hidden'}`}>
                         <li onClick={toggleMenu} className="py-4 space-y-4  ">
                             {navLinks}
                         </li>

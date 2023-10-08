@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const ServiceCard = ({ event }) => {
 
-    const { title, image , price } = event || {};
+    const { title, image  } = event || {};
     console.log(event);
     return (
         <div>
