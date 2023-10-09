@@ -1,9 +1,10 @@
-// import NavBar from "../../Pages/NavBar/NavBar";
 
 import Events from "../../Pages/Events/Events";
 import Marquap from "../../Pages/Marquap/Marquap";
+import ServicesReview from "../../Pages/ServicesReview/ServicesReview";
 import Banner from "../../Pages/Sliders/Sliders";
 import { useLoaderData } from "react-router-dom";
+import About from "../About/About";
 
 const Home = () => {
 
@@ -24,6 +25,9 @@ const Home = () => {
                     events?.map(event => <Events key={event.id} event={event} ></Events>)
                 }
             </div>
+           <ServicesReview></ServicesReview>
+           <About></About>
+
         </div>
     );
 };

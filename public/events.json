@@ -4,8 +4,8 @@
     "title": "Anniversary party Celebrating  ",
     "image": "https://i.ibb.co/jMBv5yJ/pexels-viresh-studio-1444442.jpg",
     "price": 190.99,
-    "sort_description": "Join us as we celebrate a year of love, laughter, and lasting memories! It's our anniversary, and we can't wait to share this special day with friends and family. Let's toast to another year of happiness and togetherness",
-    "details": ""
+    "sort_description": "Join us as we celebrate a year of love, laughter, and lasting memories! It's our anniversary,",
+    "details": " 1 Set a Date and Time:Choose a date and time that works for the honorees and key participants. 2 Select a Venue Choose an appropriate location that accommodates the guest count and fits the celebration's theme or style.   3 Budget Planning:Determine a budget for the event, including expenses for venue rental, catering, decorations, and entertainment.  4 Invitations : Design and send out invitations, either digitally or printed, well in advance, including RSVP details . 5  Theme and Decorations: Decide on a theme or color scheme for the party and plan decorations accordingly.  6 . Safety and Security: Ensure the safety and security of guests, especially if alcohol is being served. "
    
   },
   {
@@ -13,27 +13,27 @@
     "title": "Wedding Bliss party Celebrating ",
     "image": "https://i.ibb.co/S7xbb0r/weldding.jpg",
     "price": 200.99,
-    "sort_description": "Join us for a night of pure joy and love as we celebrate the blissful union of [Couple's Names]. It's a Wedding Bliss Party you won't want to miss, filled with music, laughter, and unforgettable moments.",
+    "sort_description": "Join us for a night of pure joy and love as we celebrate the blissful union of Couple's Names",
     "sponcer_name": "AB Group ",
-    "thumbnail_img": "https://example.com/thumb2.jpg"
+    "details":" 1 working sort details : Hire a photographer and/or videographer to capture the special moments of the celebration. 2 Timeline and Schedule Create a detailed timeline for the celebration, outlining when key events will take place, such as the first dance or cutting the cake. 3 Post-Event Evaluation: Reflect on the celebration's success, gather feedback, and consider improvements for future events."
   },
   {
     "id": 3,
     "title": "Engagement party Celebrating ",
     "image": "https://i.ibb.co/BwyLJC4/Anniversaries1.jpg",
     "price": 149.99,
-    "sort_description": "Come celebrate the love and commitment of [Couple's Names] as they embark on their journey toward forever. Join us for an unforgettable evening of joy, laughter, and well wishes at their Engagement Party.",
+    "sort_description": "Come celebrate the love and commitment of [Couple's Names]  journey toward forever.",
     "sponcer_name": "AB Group ",
-    "thumbnail_img": "https://example.com/thumb3.jpg"
+    "details": "Beverage Selection: Catering and Menu:  Entertainment: Toasts and Speeches:  Engagement Cake and Desserts: Photography and Videography: Timeline and Schedule:  Event Coordination: Safety and Security: "
   },
   {
     "id": 4,
     "title": "Birthday Bashes party Celebrating ",
     "image": "https://i.ibb.co/y8qhy4q/Birthday-events.jpg",
     "price": 99.99,
-    "sort_description": "Get ready to party as we celebrate [Name]'s big day with a Birthday Bash that promises fun, laughter, and memories that will last a lifetime! Join us for an unforgettable celebration filled with music, cake, and good company...",
-    "details": ""
-    
+    "sort_description": "Get ready to party as we celebrate [Name]'s big day with a Birthday Bash that promises fun,..",
+    "details": ". Determine the Birthday Type: 2. Set a Date and Time :Guest List: Venue Selection: Determine a budget for the birthday party, including expenses for venue, food, decorations, entertainment, and gifts  Budget Planning: Catering and Menu: Arrange for catering services or plan a menu that suits the party's style, whether it's a formal dinner, buffet, or pizza and snacks "
+     
     
   },
   {
@@ -41,17 +41,17 @@
     "title": "Retirement party Celebrations ",
     "image": "https://i.ibb.co/2N6DkfN/Retirement-Parties.jpg",
     "price": 59.99,
-    "sort_description": "Retirement parties are festive gatherings held to honor and celebrate an individual's transition from a long and fulfilling career into the world of retirement. These events mark the end of a professional chapter and the beginning...",
+    "sort_description": "Retirement parties are festive gatherings held to honor and celebrate an individual's..",
     "sponcer_name": "AB Group ",
-    "thumbnail_img": "https://example.com/thumb5.jpg"
+    "details": "Choose a date and time that works for the retiree and potential guests. Consider whether the party will be held during the day or in the evening. Consult with the retiree to understand their preferences for the retirement party, including the type of event and any specific requests or themes. Determine a budget for the retirement party, including expenses for venue rental, catering, decorations, entertainment, and gifts."
   },
   {
     "id": 6,
     "title": "Baby Shower Bliss Celebrating ",
     "image": "https://i.ibb.co/yXcgT29/aboodi-vesakaran-ox-P3bl3x-QPI-unsplash.jpg",
     "price": 30.99,
-    "sort_description": "A baby shower is a heartwarming and joyous event held to celebrate the impending arrival of a new baby into a family. It's a time for expectant parents to gather with friends,....",
+    "sort_description": "A baby shower is a heartwarming and  event held to celebrate  of a new baby into a family. ",
     "sponcer_name": "AB Group ",
-    "thumbnail_img": "https://example.com/thumb6.jpg"
+    "details": " Determine the Expectant Parent's Preferences:  Choose a date and time that works for the expectant parent(s) and potential guests. Typically, baby showers are held a few months before the due date. Decide on the types of beverages to serve, including non-alcoholic options and possibly mocktails. Plan baby shower games and activities that engage guests, such as Guess the Baby Food or Baby Bingo.A Baby Shower Bliss celebration is a joyful occasion to celebrate the upcoming arrival of a baby."
   }
 ]

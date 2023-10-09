@@ -32,26 +32,14 @@ const NavBar = () => {
 
         <li className=" hover:bg-sky-700 px-3 rounded-md ">
             <NavLink
-                to="/services"
+                to="/userlist"
                 className={({ isActive, isPending }) =>
                     isPending ? "pending" : isActive ? 'bg-sky-700  px-2  rounded-md ' : ""
                 }
             >
-                Services
+                Userlist
             </NavLink>
         </li>
-
-        <li className=" hover:bg-sky-700 px-3 rounded-md ">
-            <NavLink
-                to="/about"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? 'bg-sky-700  px-2  rounded-md ' : ""
-                }
-            >
-                About
-            </NavLink>
-        </li>
-
 
         <li className=" hover:bg-sky-700 px-3 rounded-md ">
             <NavLink
@@ -95,10 +83,12 @@ const NavBar = () => {
                 <div className="flex justify-center items-center  gap-4 relative ">
                     {
                         active && (
-                            <div className=" absolute top-8 z-50 lg:bg-gray-700  px-10 rounded-sm ">
-                                <button onClick={logOut} className=" text-center px-6  ">Logout</button>
+                            <div className=" absolute top-8 z-50 lg:bg-gray-700  px-8 rounded-sm ">
+                                <button onClick={logOut} className=" text-cyan-500 text-center px-20  ">Logout</button>
                                 <div className=" ">
-                                    <h1 className=" font-medium text-center pb-4 "> {user?.displayName} </h1>
+                                    
+                                    <h1 className=" font-medium text-center  "> {user?.displayName} </h1>
+                                    <p className=" pb-4 font-semibold text-center "> {user.email} </p>
                                 </div>
                             </div>
                         )
@@ -124,22 +114,6 @@ const NavBar = () => {
                             }
                         </button>
 
-
-
-                        {/* <div className="flex justify-center items-center  gap-4 relative ">
-                            {
-                                active && (
-                                    <div className="  absolute top-8 z-50 bg-gray-700 px-10 rounded-sm ">
-                                        <button onClick={logOut} className=" text-center px-6 ">Logout</button>
-                                        <div className=" ">
-                                            <h1 className=" font-medium text-center pb-2 "> {user?.displayName} </h1>
-                                        </div>
-                                    </div>
-                                )
-                            }
-                            <img onClick={() => setActive(!active)} className="w-8 rounded-full " src={user?.photoURL} alt={user?.displayName} />
-                        </div> */}
-
                     </div>
 
                 </nav>
@@ -147,7 +121,7 @@ const NavBar = () => {
 
 
                 <div className="">
-                    <ul className={`lg:hidden gap-12 z-40 sticky top-0 left-0 block text-lg space-y-4 px-4 py-2  rounded-md  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#fff]  font-bold  ${menuOpen ? " fixed duration-700 bg-cyan-400  w-full  text-center pb-14 " : 'hidden'}`}>
+                    <ul className={`lg:hidden gap-12 z-40 sticky top-0 left-0 block text-lg space-y-4 px-4 py-2  rounded-md  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#fff]  font-bold  ${menuOpen ? " fixed duration-700 bg-cyan-400  w-full  text-center pb-20 " : 'hidden'}`}>
                         <li onClick={toggleMenu} className="py-4 space-y-4  ">
                             {navLinks}
                         </li>

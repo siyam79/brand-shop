@@ -53,14 +53,12 @@ const Register = () => {
             })
 
 
-
-
     }
     return (
         <>
             <div className=" ">
-                <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="text-center lg:text-left">
+                <div className="hero-content flex-col ">
+                    <div className="text-center ">
                         <h1 className="text-3xl font-bold  ">Register now!</h1>
 
                     </div>

@@ -1,9 +1,9 @@
-
+import { FaGoogle , FaLinkedin, FaSquareFacebook , FaTwitter ,   } from 'react-icons/fa6';
 
 const Contact = () => {
     return (
         <div>
-            <div className=" lg:w-[50%]  mx-auto p-6 bg-gray-800 rounded-lg shadow-md  mt-6 ">
+            <div className=" lg:w-[50%]  mx-auto p-6 bg-gray-800 rounded-lg shadow-md  mt-6 " data-aos="zoom-out-up">
                 <h2 className="text-3xl text-center text-pink-600 font-bold mb-6 mt-10 "> Contact Us </h2>
                 <form action="">
 
@@ -26,6 +26,16 @@ const Contact = () => {
                     <div className=" text-center ">
                         <button type="submit" className=" bg-pink-500 text-white font-semibold px-6 py-2 rounded-lg hover:bg-pink-600 focus:outline-white " > Submit </button>
                     </div>
+
+                        <div className=' text-white flex items-center justify-center text-center gap-6 pt-6  text-xl  '> 
+                           <FaGoogle className=' '></FaGoogle>
+                           <FaLinkedin></FaLinkedin>
+                           <FaSquareFacebook></FaSquareFacebook>
+                            <FaTwitter></FaTwitter>
+                            
+
+                        </div>
+
                 </form>
 
             </div>

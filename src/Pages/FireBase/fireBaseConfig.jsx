@@ -1,12 +1,16 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+
+console.log( "vaiteb pass datav ", import.meta.env.VITE_PASS);
+
+
 const fireBaseConfig = {
-    apiKey: "AIzaSyAamirhFDoeAN9ZjecpTgsex4YL1tzs-0k",
-    authDomain: "social-event-c5d78.firebaseapp.com",
-    projectId: "social-event-c5d78",
-    storageBucket: "social-event-c5d78.appspot.com",
-    messagingSenderId: "761736755913",
-    appId: "1:761736755913:web:fc54d30cc6b330bd496b18"
+    apiKey:import.meta.env.VITE_APIKEY,
+    authDomain:import.meta.env.VITE_AUTHDOMAIN,
+    projectId:import.meta.env.VITE_PROJECTID,
+    storageBucket:import.meta.env.VITE_STORAGEBUCKET,
+    messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID,
+    appId:import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
