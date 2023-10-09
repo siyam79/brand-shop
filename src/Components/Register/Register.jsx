@@ -43,7 +43,9 @@ const Register = () => {
                                 position: 'top-center'
 
                             })
+                            // window.location.reload()
                             navigate('/')
+                            
                         })
 
             })

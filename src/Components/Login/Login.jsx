@@ -93,8 +93,10 @@ const Login = () => {
                             <label className="label">
                                 New here? <Link to="/register" className="label-text-alt link link-hover text-[16px] text-cyan-600 ">Create an account</Link>
                             </label>
-                            <SocialLogin></SocialLogin>
                         </form>
+                       <div className=" pb-6 ">
+                       <SocialLogin></SocialLogin>
+                       </div>
                     </div>
                 </div>
                 <ToastContainer

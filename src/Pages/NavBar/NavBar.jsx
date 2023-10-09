@@ -84,7 +84,7 @@ const NavBar = () => {
                     {
                         active && (
                             <div className=" absolute top-8 z-50 lg:bg-gray-700  px-8 rounded-sm ">
-                                <button onClick={logOut} className=" text-cyan-500 text-center px-20  ">Logout</button>
+                                <button onClick={logOut} className=" lg:text-cyan-500 text-center px-20  ">Logout</button>
                                 <div className=" ">
                                     
                                     <h1 className=" font-medium text-center  "> {user?.displayName} </h1>

@@ -6,7 +6,7 @@ const ServiceCard = ({ event }) => {
     console.log(event);
     return (
         <div>
-            <div className="hero min-h-screen bg-base-200" data-aos="fade-right">
+            <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row">
                     <img src={image} className="lg:w-1/2 w-full rounded-lg shadow-2xl" />
                     <div>

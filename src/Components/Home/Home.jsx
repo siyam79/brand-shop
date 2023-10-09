@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <div>
-            {/* <NavBar></NavBar> */}
+            
             <Banner></Banner>
             <Marquap></Marquap>
             <div>

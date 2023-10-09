@@ -29,11 +29,15 @@ const SocialLogin = () => {
                 console.log(res);
                 
                 if (res.user) {
+                   
                     toast.success('User logged in successfully', {
                         position: 'top-center'
 
                     })
-                    navigate('/')
+                    setTimeout(() => {
+                        navigate('/')
+                    }, 1000);
+                   
                     // navigate(location?.state ? location.state : '/')
                 }
 
