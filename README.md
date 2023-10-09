@@ -2,10 +2,10 @@
 
 ## Social Event-Management 
 
-### Projects Live Link : 
+### Projects Live Link : https://social-event-c5d78.web.app/
 
 
-### Projects Name 
+### Projects feautres 
 
 
 #### 1 We have a project called social event and there we work on the project and there we have a total of 6 features. Your customer or user can work with us on any event and working and Management 
