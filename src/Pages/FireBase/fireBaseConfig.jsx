@@ -1,8 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
-console.log( "vaiteb pass datav ", import.meta.env.VITE_PASS);
-
 
 const fireBaseConfig = {
     apiKey:import.meta.env.VITE_APIKEY,
