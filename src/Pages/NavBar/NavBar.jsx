@@ -112,7 +112,7 @@ const NavBar = () => {
     return (
         <div>
             <div className="  ">
-                <nav className=" fixed top-0 left-0 z-50 w-full mx-auto ml-1 mr-4 lg:flex flex items-center justify-between bg-slate-700  text-white py-8 px-4 ">
+                <nav className=" sticky top-0 left-0 z-50 w-full mx-auto ml-1 mr-4 lg:flex flex items-center justify-between bg-slate-700  text-white py-8 px-4 ">
                     <h1 className=" text-2xl font-bold ">Social <span className=" text-cyan-600 ">Events</span></h1>
                     <ul className=" lg:flex lg:px-10 lg:gap-8 gap-4 mr-6 hidden font-bold text-lg ">
                         {navLinks}
@@ -147,7 +147,7 @@ const NavBar = () => {
 
 
                 <div className="">
-                    <ul className={`lg:hidden gap-12 z-40 mt-10 block text-lg space-y-4 px-4 py-2  rounded-md  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#fff]  font-bold  ${menuOpen ? " fixed duration-700 bg-cyan-400  w-full  text-center pb-14 " : 'hidden'}`}>
+                    <ul className={`lg:hidden gap-12 z-40 sticky top-0 left-0 block text-lg space-y-4 px-4 py-2  rounded-md  bg-gradient-to-r from-cyan-500 to-blue-500 text-[#fff]  font-bold  ${menuOpen ? " fixed duration-700 bg-cyan-400  w-full  text-center pb-14 " : 'hidden'}`}>
                         <li onClick={toggleMenu} className="py-4 space-y-4  ">
                             {navLinks}
                         </li>

@@ -17,7 +17,7 @@ const ServiceDetails = () => {
     console.log(event);
 
     return (
-        <div className=" mt-14 ">
+        <div className=" ">
             <ServiceCard event={event}></ServiceCard>
 
         </div>

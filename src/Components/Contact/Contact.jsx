@@ -3,7 +3,7 @@
 const Contact = () => {
     return (
         <div>
-            <div className=" lg:w-[50%]  mx-auto p-6 bg-gray-800 rounded-lg shadow-md  lg:mt-28 mt-14 ">
+            <div className=" lg:w-[50%]  mx-auto p-6 bg-gray-800 rounded-lg shadow-md  mt-6 ">
                 <h2 className="text-3xl text-center text-pink-600 font-bold mb-6 mt-10 "> Contact Us </h2>
                 <form action="">
 

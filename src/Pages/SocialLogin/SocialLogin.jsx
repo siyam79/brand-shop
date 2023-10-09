@@ -9,29 +9,39 @@ import { FcGoogle } from 'react-icons/fc';
 import { BsGithub } from 'react-icons/bs';
 
 const SocialLogin = () => {
-    
+
     const { googleLogin, githubLogin } = useContext(AuthContext)
 
-    const {navigate} = useNavigate()
+    const { navigate } = useNavigate()
 
     const handleSocialLogin = (user) => {
+        // googleLogin()
+        // .then(res =>{
+        //    alert(res.user, 'login succesfull');
+        //    user&&  navigate('/')
+
+        // }).catch(error=>{
+        //     console.error(error.message);
+        // })
 
         user()
-        .then(res => {
-            console.log(res);
-            if(res.user){
-                toast.success('User logged in successfully', {
-                    position: 'top-center'
-    
-                })
-                navigate('/')
-            }
-            
-        }).catch(error => {
-           toast.error('please Try your Login' , error);
-        })
+            .then(res => {
+                console.log(res);
+                
+                if (res.user) {
+                    toast.success('User logged in successfully', {
+                        position: 'top-center'
+
+                    })
+                    navigate('/')
+                    // navigate(location?.state ? location.state : '/')
+                }
+
+            }).catch(error => {
+                toast.error( error);
+            })
     }
-  
+
     return (
         <>
             <div className="divider">continue with</div>
@@ -42,7 +52,6 @@ const SocialLogin = () => {
                 <button
                     onClick={() => { handleSocialLogin(githubLogin) }}
                     className="btn btn-sm " ><span className="text-xl "> <BsGithub></BsGithub> </span> Github</button>
-
             </div>
             <ToastContainer></ToastContainer>
         </>
